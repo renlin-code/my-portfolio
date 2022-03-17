@@ -1,0 +1,71 @@
+:root {
+    --main-color: #00E991;
+    --secondary-color: #344C62;
+    --black-color: #151F28;
+    --white-color: #F4F4F4;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: "Open Sans", sans-serif;
+}
+body {
+    background-color: var(--black-color);
+    min-width: 320px;
+}
+
+header .nav-bar ul {
+    width: 95%;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header .nav-bar .nav-bar--menu {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url("./assets/icons/menu.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+header .nav-bar .nav-bar--logo {
+    width: 180px;
+    height: 30px;
+    display: inline-block;
+    background-image: url("./assets/logos/renlin-code.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+header .nav-bar .nav-bar--telephone-icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url("./assets/icons/telephone.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+header .nav-bar .nav-bar--telephone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+@media (max-width: 930px){
+header .nav-bar .nav-bar--telephone-number {
+    display: none;
+}}
+header .nav-bar .nav-bar--telephone-number {
+    color: var(--white-color);
+    font-size: 1.8rem;
+    margin-left: 10px;
+}
