@@ -13,11 +13,10 @@ html {
     font-size: 62.5%;
     font-family: "Open Sans", sans-serif;
 }
-body {
+header .nav-bar {
     background-color: var(--black-color);
     min-width: 320px;
 }
-
 header .nav-bar ul {
     width: 95%;
     height: 70px;
@@ -31,7 +30,7 @@ header .nav-bar .nav-bar--menu {
     width: 24px;
     height: 24px;
     display: inline-block;
-    background-image: url("./assets/icons/menu.svg");
+    background-image: url("../assets/icons/menu.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -40,7 +39,7 @@ header .nav-bar .nav-bar--logo {
     width: 180px;
     height: 30px;
     display: inline-block;
-    background-image: url("./assets/logos/renlin-code.svg");
+    background-image: url("../assets/logos/renlin-code.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -49,7 +48,7 @@ header .nav-bar .nav-bar--telephone-icon {
     width: 24px;
     height: 24px;
     display: inline-block;
-    background-image: url("./assets/icons/telephone.svg");
+    background-image: url("../assets/icons/telephone.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -68,4 +67,50 @@ header .nav-bar .nav-bar--telephone-number {
     color: var(--white-color);
     font-size: 1.8rem;
     margin-left: 10px;
+}
+main {
+    background-color: var(--black-color);
+    width: 100%;
+    min-width: 320px;
+}
+.main-section {
+    height: 72vh;
+    width: 95%;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.main-section--titles-container {
+    height: auto;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-family: "Russo One", sans-serif;
+    font-weight: bold;
+    color: var(--white-color);
+}
+.main-section--titles-container p {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+.main-section--titles-container h1 {
+    margin-top: 10px;
+    font-size: 5rem;
+    line-height: 5rem;
+}
+.main-section--background-img {
+    width: 300px;
+    height: 340px;
+    margin: 10px auto 0;
+    background-color: rgb(77, 77, 77);
+}
+.main-section--arrow-down {
+    width: 24px;
+    height: 12px;
+    position: absolute;
+    bottom: 10px;
+    left: calc(50% - 20px);
+    background-image: url("../assets/icons/arrow-down.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
