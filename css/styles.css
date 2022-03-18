@@ -73,9 +73,13 @@ main {
     width: 100%;
     min-width: 320px;
 }
-.main-section {
-    height: 72vh;
+.section-container {
+    max-width: 930px;
+    margin: 0 auto;
     width: 95%;
+}
+.main-section {
+    height: auto;
     position: relative;
     margin: 0 auto;
     overflow: hidden;
@@ -93,14 +97,14 @@ main {
     line-height: 1.6rem;
 }
 .main-section--titles-container h1 {
-    margin-top: 10px;
-    font-size: 5rem;
-    line-height: 5rem;
+    margin-top: 18px;
+    font-size:6rem;
+    line-height: 6.2rem;
 }
 .main-section--background-img {
     width: 300px;
-    height: 340px;
-    margin: 10px auto 0;
+    height: 290px;
+    margin: 0 auto;
     background-color: rgb(77, 77, 77);
 }
 .main-section--arrow-down {
@@ -113,4 +117,49 @@ main {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+.section-about-me {
+    height: auto;
+    width: 100%;
+    background-color: var(--white-color);
+}
+.section--title-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.section--title-container span {
+    display: inline-block;
+    width: 50px;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--black-color);
+}
+.section--title-container h2 {
+    font-family: "Russo One",sans-serif;
+    font-size: 3rem;
+    margin: 40px 10px;
+    color: var(--black-color);
+}
+.section-about-me--article {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 930px){
+    .section-about-me--article {
+        flex-direction: row;
+        }}    
+.section-about-me--article p {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    margin-bottom: 20px;
+    color: var(--black-color);
+}
+.section-about-me .section-about-me--article-img-container {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;   
+    height: 340px;
+    background-color: var(--main-color);
 }
