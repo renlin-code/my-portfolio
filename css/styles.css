@@ -159,6 +159,7 @@ main {
     }
     .section-article .section-about-me--article-img-container {
         order: -1;
+        margin-right: 20px;
         }}    
 .section-article p {
     font-size: 1.4rem;
@@ -193,7 +194,7 @@ main {
 }
 .certificates-slide .certificate {
     width: 165px;
-    height: 127.5px;
+    height: 127px;
     display: block;
     margin: 0 auto;
     background-position: center;
@@ -201,38 +202,38 @@ main {
     background-repeat: no-repeat;
 }
 .certificates-slide .certificate1 {
-    background-image: url("../assets/images/certificate-frontend.png");
+    background-image: url("../assets/images/certificate-frontend-mini.png");
 }
 .certificates-slide .certificate2 {
-    background-image: url("../assets/images/certificate-frontend-practic.png");
+    background-image: url("../assets/images/certificate-frontend-practic-mini.png");
 }
 .certificates-slide .certificate3 {
-    background-image: url("../assets/images/certificate-html-and-css.png");
+    background-image: url("../assets/images/certificate-html-and-css-mini.png");
 }
 .certificates-slide .certificate4 {
-    background-image: url("../assets/images/certificate-html-and-css-practic.png");
+    background-image: url("../assets/images/certificate-html-and-css-practic-mini.png");
 }
 .certificates-slide .certificate5 {
-    background-image: url("../assets/images/certificate-basic-js.png");
+    background-image: url("../assets/images/certificate-basic-js-mini.png");
 }
 .certificates-slide .certificate6 {
-    background-image: url("../assets/images/certificate-basic-js-practic.png");
+    background-image: url("../assets/images/certificate-basic-js-practic-mini.png");
 }
 .certificates-slide .certificate7 {
-    background-image: url("../assets/images/certificate-responsive-mobile-first.png");
+    background-image: url("../assets/images/certificate-responsive-mobile-first-mini.png");
 }
 .certificates-slide .certificate8 {
-    background-image: url("../assets/images/certificate-scope.png");
+    background-image: url("../assets/images/certificate-scope-mini.png");
 }
 .certificates-slide .certificate9 {
-    background-image: url("../assets/images/certificate-terminal.png");
+    background-image: url("../assets/images/certificate-terminal-mini.png");
 }
 .certificates-slide .certificate10 {
-    background-image: url("../assets/images/certificate-software-engineering.png");
+    background-image: url("../assets/images/certificate-software-engineering-mini.png");
 }
 .certificates-slide .certificate11 {
-    background-image: url("../assets/images/certificate-git-github.png");
+    background-image: url("../assets/images/certificate-git-github-mini.png");
 }
 .certificates-slide .certificate12 {
-    background-image: url("../assets/images/certificate-basic-js-OOP.png");
+    background-image: url("../assets/images/certificate-basic-js-OOP-mini.png");
 }
