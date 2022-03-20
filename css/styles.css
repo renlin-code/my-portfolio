@@ -201,6 +201,10 @@ main {
     background-size: contain;
     background-repeat: no-repeat;
 }
+.certificates-slide .certificate:hover {
+    opacity: 0.4;
+    cursor: url("../assets/icons/loupe.cur"), default;
+}
 .certificates-slide .certificate1 {
     background-image: url("../assets/images/certificate-frontend-mini.png");
 }
