@@ -35,7 +35,7 @@ header .header-bar .header-bar--menu-button {
     background-size: contain;
     background-repeat: no-repeat;
 }
-header .header-bar .header-bar--logo {
+.logotipe {
     width: 180px;
     height: 30px;
     display: inline-block;
@@ -44,25 +44,25 @@ header .header-bar .header-bar--logo {
     background-size: contain;
     background-repeat: no-repeat;
 }
-header .header-bar .header-bar--telephone-icon {
-    width: 24px;
-    height: 24px;
+.telephone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.telephone-icon {
+    width: 20px;
+    height: 20px;
     display: inline-block;
     background-image: url("../assets/icons/telephone.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
-header .header-bar .header-bar--telephone {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-}
-header .header-bar .header-bar--telephone-number {
+.telephone-number {
     color: var(--white-color);
-    font-size: 1.8rem;
-    margin-left: 10px;
+    font-size: 1.4rem;
+    margin-left: 6px;
     display: none;
 }
 @media (min-width: 790px){
@@ -96,9 +96,10 @@ main {
     min-width: 320px;
 }
 .section-container {
-    max-width: 930px;
-    margin: 0 auto;
     width: 95%;
+    max-width: 930px;
+    height: 100%;
+    margin: 0 auto;
     position: relative;
 }
 .main-section {
@@ -234,9 +235,11 @@ main {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.6);
 }
 .certificates-slide .certificate:hover {
-    opacity: 0.4;
+    background-blend-mode: soft-light;
     cursor: url("../assets/icons/loupe.cur"), default;
 }
 .certificates-slide .certificate1 {
@@ -318,7 +321,7 @@ main {
     min-width: 320px;
     display: block;
     margin-bottom: 40px;
-
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
 }
 .section-my-works .section-article .article-content .first-work {
     background-color: rgb(255, 152, 34);
@@ -356,7 +359,6 @@ main {
 }
 .section-contacts .contacts-container .contacts-container--left {
     list-style: none;
-    width: 50%;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -366,9 +368,6 @@ main {
     font-size: 1.4rem;
     line-height: 1.6rem;
 }
-.section-contacts .contacts-container .contacts-container--right {
-    width: 50%;
-}
 .section-contacts .contacts-container .contacts-container--right--telephone {
     display: flex;
     justify-content: center;
@@ -377,8 +376,8 @@ main {
     margin-bottom: 20px;
 }
 .section-contacts .contacts-container .contacts-container--right .contacts-container--right--telephone-icon {
-    width: 18px;
-    height: 18px;
+    width: 22px;
+    height: 22px;
     display: inline-block;
     background-image: url("../assets/icons/green-telephone.svg");
     background-position: center;
@@ -386,8 +385,8 @@ main {
     background-repeat: no-repeat;
 }
 .section-contacts .contacts-container .contacts-container--right .contacts-container--right--telephone-number{
-    font-size: 1.4rem;
-    line-height: 1.6rem;
+    font-size: 2rem;
+    line-height: 2.2rem;
     font-weight: bold;
     display: inline-block;
     margin-left: 10px;
@@ -415,5 +414,64 @@ main {
     .section-contacts .contacts-container .contacts-container--right .contacts-container--right--telephone-number{
         font-size: 2.2rem;
         line-height: 2.4rem;
+    }
+}
+footer {
+    background-color: #0B1113;
+}
+footer .logotipe {
+    width: 180px;
+    height: 30px;
+    margin: 0px auto;
+    padding: 30px 0 30px;
+    display: block;
+}
+footer .footer-flex-container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .footer-flex-container .footer-menu {
+    list-style: none;
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 30px;
+    display: flex;
+}
+footer .footer-flex-container .footer-menu li {
+    margin: 6px auto 6px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+footer .footer-flex-container .footer-menu li:nth-child(1) {
+    margin-left: 0;
+}
+footer .footer-flex-container .footer-menu li a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+footer .footer-flex-container .telephone .telephone-number {
+    display: inline-block;
+}
+footer .github, footer .github a {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    padding: 20px 0;
+    color: var(--white-color);
+}
+@media (min-width: 550px){
+    footer .footer-flex-container {
+        flex-direction: row;
+    }
+    footer .footer-flex-container .footer-menu {
+        margin-bottom: 0;
+    }
+    footer .github, footer .github a {
+        text-align: right;
     }
 }
