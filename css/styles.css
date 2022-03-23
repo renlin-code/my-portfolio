@@ -475,3 +475,11 @@ footer .github, footer .github a {
         text-align: right;
     }
 }
+header .header-bar .header-bar--menu-button:hover,
+.telephone:hover,
+.section-certificates .popup-certificate span:hover,
+.section-my-works .section-article .article-content a:hover,
+.section-contacts .contacts-container a:hover, footer .footer-menu li:hover, 
+footer .github a:hover {
+    opacity: 0.6;
+}
