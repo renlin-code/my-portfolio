@@ -1,0 +1,32 @@
+.section-contacts .contacts-container .contacts-container--left {
+    flex-direction: row;
+    justify-content: left;
+}
+.section-contacts .contacts-container .contacts-container--left li {
+    margin: 0 14px;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}    
+.section-contacts .contacts-container .contacts-container--left li:nth-child(1) {
+    margin-left: 0;
+}
+.section-contacts .contacts-container .contacts-container--right--telephone {
+    justify-content: right;
+}
+.section-contacts .contacts-container .contacts-container--right .contacts-container--right--telephone-icon {
+    width: 24px;
+    height: 24px;
+}        
+.section-contacts .contacts-container .contacts-container--right .contacts-container--right--telephone-number{
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+}
+footer .footer-flex-container {
+    flex-direction: row;
+}
+footer .footer-flex-container .footer-menu {
+    margin-bottom: 0;
+}
+footer .github, footer .github a {
+    text-align: right;
+}

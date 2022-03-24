@@ -1,0 +1,21 @@
+header .header-bar .header-bar--telephone-number {
+    display: inline;
+}
+.section-article {
+    flex-direction: row;
+}
+.section-article .section-about-me--article-img-container {
+    order: -1;
+    margin-right: 20px;
+}
+.section-article {
+    flex-direction: row;
+}
+.section-my-works .section-article .article-content--left {
+    order: -1;
+    margin-right: 20px;
+}
+.section-my-works .section-article .article-content--right {
+    order: 0;
+    margin-left: 20px;
+}

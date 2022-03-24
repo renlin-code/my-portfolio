@@ -65,10 +65,6 @@ header .header-bar .header-bar--menu-button {
     margin-left: 6px;
     display: none;
 }
-@media (min-width: 790px){
-    header .header-bar .header-bar--telephone-number {
-        display: inline;
-    }}    
 /* header .menu {
     width: 300px;
     height: 100%;
@@ -179,14 +175,6 @@ main {
     justify-content: center;
     align-items: center;
 }
-@media (min-width: 790px){
-    .section-article {
-        flex-direction: row;
-    }
-    .section-article .section-about-me--article-img-container {
-        order: -1;
-        margin-right: 20px;
-        }}    
 .section-article p {
     font-size: 1.4rem;
     line-height: 1.6rem;
@@ -332,19 +320,6 @@ main {
 .section-my-works .section-article .article-content .third-work {
     background-color: var(--secondary-color);
 }
-@media (min-width: 790px){
-    .section-article {
-        flex-direction: row;
-    }
-    .section-my-works .section-article .article-content--left {
-        order: -1;
-        margin-right: 20px;
-    }
-    .section-my-works .section-article .article-content--right {
-        order: 0;
-        margin-left: 20px;
-    }
-}    
 .section-contacts .contacts-container {
     width: 100%;
     height: auto;
@@ -390,31 +365,6 @@ main {
     font-weight: bold;
     display: inline-block;
     margin-left: 10px;
-}
-@media (min-width: 550px){
-    .section-contacts .contacts-container .contacts-container--left {
-        flex-direction: row;
-        justify-content: left;
-    }
-    .section-contacts .contacts-container .contacts-container--left li {
-        margin: 0 14px;
-        font-size: 1.6rem;
-        line-height: 1.8rem;
-    }    
-    .section-contacts .contacts-container .contacts-container--left li:nth-child(1) {
-        margin-left: 0;
-    }
-    .section-contacts .contacts-container .contacts-container--right--telephone {
-        justify-content: right;
-    }
-    .section-contacts .contacts-container .contacts-container--right .contacts-container--right--telephone-icon {
-        width: 24px;
-        height: 24px;
-    }        
-    .section-contacts .contacts-container .contacts-container--right .contacts-container--right--telephone-number{
-        font-size: 2.2rem;
-        line-height: 2.4rem;
-    }
 }
 footer {
     background-color: #0B1113;
@@ -463,17 +413,6 @@ footer .github, footer .github a {
     line-height: 1.4rem;
     padding: 20px 0;
     color: var(--white-color);
-}
-@media (min-width: 550px){
-    footer .footer-flex-container {
-        flex-direction: row;
-    }
-    footer .footer-flex-container .footer-menu {
-        margin-bottom: 0;
-    }
-    footer .github, footer .github a {
-        text-align: right;
-    }
 }
 header .header-bar .header-bar--menu-button:hover,
 .telephone:hover,
