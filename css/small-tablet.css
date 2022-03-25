@@ -1,3 +1,24 @@
+.main-section--titles-container {
+    padding-top: 60px;
+}
+.main-section--titles-container p {
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
+.main-section--titles-container h1 {
+    margin-top: 18px;
+    font-size:8rem;
+    line-height: 8.4rem;
+}
+.main-section--background-img {
+    width: 450px;
+    height: 435px;
+    position: absolute;
+    bottom: 0;
+    left: 90%;
+    transform: translate(-90%);
+}
+
 .section-contacts .contacts-container .contacts-container--left {
     flex-direction: row;
     justify-content: left;
