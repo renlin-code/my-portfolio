@@ -1,33 +1,15 @@
 //NAVIGATOR MENU
-const header = document.querySelector("header");
-
-window.addEventListener("scroll", () => {
-    if (window.scrollY >= 20) {
-        header.classList.add("header_active");
-    }
-    else {
-        header.classList.remove("header_active");
-    }
-})
 const menuButtom = document.querySelector(".header-nav--menu-button");
 const navMenu = document.querySelector(".nav-menu");
-
+const body = document.querySelector("body");
 menuButtom.addEventListener("click", () => {
     navMenu.classList.toggle("nav-menu_visible");
+    body.classList.toggle("body_fixed");
 });
 function menuItemClick(){
     navMenu.classList.remove("nav-menu_visible");
+    body.classList.remove("body_fixed");
 };
-
-
-    if (document.getElementsByClassName("nav-menu_visible") == navMenu)
-    {
-        header.classList.add("header_active");
-    }
-    else {
-        header.classList.remove("header_active");
-    }
-
 
 //CERTIFICATES
 class Certificate {
