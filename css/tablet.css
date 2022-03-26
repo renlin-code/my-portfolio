@@ -10,6 +10,8 @@ nav .nav-menu {
     flex-direction: row;
     justify-content: space-between;
     position: static;
+    background-color: unset;
+    box-shadow: none;
 }
 nav .nav-menu li {
     width: auto;
@@ -25,7 +27,7 @@ header .header-nav .header-nav--menu-button {
     display: none;
 }
 .main-section {
-    height: calc(100vh - 70px);
+    height: 100vh;
 }
 .main-section--titles-container {
     padding-top: 80px;

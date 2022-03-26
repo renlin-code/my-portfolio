@@ -2,6 +2,8 @@
     --main-color: #00E991;
     --secondary-color: #344C62;
     --black-color: #151F28;
+    --very-black-color: #0f1b1f;
+;
     --white-color: #F4F4F4;
 }
 * {
@@ -14,16 +16,22 @@ html {
     font-family: "Open Sans", sans-serif;
     scroll-behavior: smooth;
 }
-.body_fixed {
-    position: fixed;
-}
 header {
+    width: 100%;
+    position: fixed;
     background-color: var(--black-color);
+    z-index: 2;
+    transition: background-color 0.5s;
+}
+html .header_active {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    background-color: var(--very-black-color);
+;
 }
 header .header-nav {
     width: 95%;
     min-width: 320px;
-    height: 70px;
+    height: 60px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -55,16 +63,17 @@ header .header-nav .header-nav--menu-button {
     list-style: none;
     width: 100%;
     padding-top: 50px;
-    height: calc(100% - 70px);
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: fixed;
     right: 100%;
-    top: 70px;
+    top: 60px;
     z-index: 1;
     overflow-y: auto;
-    background: var(--black-color);
+    background: var(--very-black-color);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
     transition: right 0.5s;
 }
 nav .nav-menu_visible {
@@ -423,7 +432,7 @@ main {
     margin-left: 10px;
 }
 footer {
-    background-color: #0B1113;
+    background-color: var(--very-black-color);
 }
 footer .logotipe {
     width: 180px;
