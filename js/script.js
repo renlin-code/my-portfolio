@@ -2,9 +2,15 @@
 const menuButtom = document.querySelector(".header-nav--menu-button");
 const navMenu = document.querySelector(".nav-menu");
 const body = document.querySelector("body");
+var menuItem = document.querySelector(".menu-item");
+
 menuButtom.addEventListener("click", () => {
     navMenu.classList.toggle("nav-menu_visible");
     body.classList.toggle("body_fixed");
+});
+menuItem.addEventListener("click", () => {
+    navMenu.classList.remove("nav-menu_visible");
+    body.classList.remove("body_fixed");
 });
 
 
