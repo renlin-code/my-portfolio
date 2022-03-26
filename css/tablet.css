@@ -27,7 +27,7 @@ header .header-nav .header-nav--menu-button {
     display: none;
 }
 .main-section {
-    height: calc(100vh - 60px);
+    height: calc(100vh - 70px);
 }
 .main-section--titles-container {
     padding-top: 80px;

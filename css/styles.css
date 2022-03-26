@@ -29,7 +29,7 @@ header {
 header .header-nav {
     width: 95%;
     min-width: 320px;
-    height: 60px;
+    height: 70px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -67,7 +67,7 @@ header .header-nav .header-nav--menu-button {
     align-items: center;
     position: fixed;
     right: 100%;
-    top: 60px;
+    top: 70px;
     z-index: 1;
     overflow-y: auto;
     background: var(--black-color);
@@ -385,7 +385,6 @@ main {
 .section-contacts .contacts-container {
     width: 100%;
     height: auto;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
