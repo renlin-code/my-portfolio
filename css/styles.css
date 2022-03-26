@@ -13,12 +13,15 @@ html {
     font-size: 62.5%;
     font-family: "Open Sans", sans-serif;
 }
-header .header-bar {
-    background-color: var(--black-color);
-    min-width: 320px;
+.body_fixed {
+    position: fixed;
 }
-header .header-bar ul {
+header {
+    background-color: var(--black-color);
+}
+header .header-nav {
     width: 95%;
+    min-width: 320px;
     height: 70px;
     margin: 0 auto;
     display: flex;
@@ -26,23 +29,55 @@ header .header-bar ul {
     align-items: center;
     list-style: none;
 }
-header .header-bar .header-bar--menu-button {
+header .header-nav .header-nav--menu-button {
     width: 24px;
     height: 24px;
     display: inline-block;
+    background-color: unset;
     background-image: url("../assets/icons/menu.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
 }
 .logotipe {
-    width: 180px;
-    height: 30px;
+    width: 150px;
+    height: 20px;
     display: inline-block;
     background-image: url("../assets/logos/renlin-code.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+.nav-menu {
+    list-style: none;
+    width: 100%;
+    padding-top: 50px;
+    height: calc(100% - 70px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 100%;
+    top: 70px;
+    z-index: 1;
+    overflow-y: auto;
+    background: var(--black-color);
+    transition: right 0.5s;
+}
+nav .nav-menu_visible {
+    right: 0;
+}
+nav .nav-menu li {
+    margin: 30px 0;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: bold;
+}
+nav .nav-menu li a {
+    text-decoration: none;
+    color: var(--white-color);
 }
 .telephone {
     display: flex;
@@ -65,29 +100,6 @@ header .header-bar .header-bar--menu-button {
     margin-left: 6px;
     display: none;
 }
-
-/* header .menu {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    background-color: var(--secondary-color);
-    text-align: center;
-    z-index: 1;
-}
-header .menu ul li {
-    display: block;
-    border-bottom: 1px solid var(--black-color);   
-}
-header .menu ul li a {
-    display: block;
-    padding: 20px;
-    margin: 0 auto;
-    font-size: 2.0rem;
-    line-height: 2.2rem;
-    font-weight: bold;
-    color: var(--white-color);
-    text-decoration: none;
-} */
 
 main {
     background-color: var(--black-color);
@@ -457,7 +469,8 @@ footer .github, footer .github a {
     padding: 20px 0;
     color: var(--white-color);
 }
-header .header-bar .header-bar--menu-button:hover,
+header .header-nav 
+ .header-nav--menu-button:hover, .nav-menu li:hover, 
 .telephone:hover,
 .section-certificates .popup-certificate span:hover,
 .section-my-works .section-article .article-content a:hover,

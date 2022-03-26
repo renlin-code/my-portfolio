@@ -1,5 +1,28 @@
-header .header-bar .header-bar--telephone-number {
+.logotipe {
+    width: 180px;
+    height: 30px;
+}
+nav .nav-menu {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    position: static;
+}
+nav .nav-menu li {
+    width: auto;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+}
+header .header-nav .header-nav--telephone-number {
     display: inline;
+}
+header .header-nav .header-nav--menu-button {
+    display: none;
 }
 .main-section {
     height: calc(100vh - 70px);

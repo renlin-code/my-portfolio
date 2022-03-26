@@ -1,3 +1,13 @@
+//NAVIGATOR MENU
+const menuButtom = document.querySelector(".header-nav--menu-button");
+const navMenu = document.querySelector(".nav-menu");
+const body = document.querySelector("body");
+menuButtom.addEventListener("click", () => {
+    navMenu.classList.toggle("nav-menu_visible");
+    body.classList.toggle("body_fixed");
+});
+
+
 //CERTIFICATES
 class Certificate {
     constructor(
@@ -80,10 +90,6 @@ const id11 = new Certificate ({
     description: "Curso Básico de JS Orientado a Objetos",
     viewLocation: "./assets/images/certificate-basic-js-OOP.png"
 })
-
-
-
-
 
 function popupClose() {
     document.getElementById("popup-window").style.display = "none";
