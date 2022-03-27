@@ -1,14 +1,15 @@
 //NAVIGATOR MENU
-const menuButtom = document.querySelector(".header-nav--menu-button");
+const menuButton = document.querySelector(".header-nav--menu-button");
 const navMenu = document.querySelector(".nav-menu");
 const body = document.querySelector("body");
-menuButtom.addEventListener("click", () => {
+menuButton.addEventListener("click", () => {
     navMenu.classList.toggle("nav-menu_visible");
     body.classList.toggle("body_fixed");
 });
 function menuItemClick(){
     navMenu.classList.remove("nav-menu_visible");
     body.classList.remove("body_fixed");
+    document.getElementById("btn-menu-checkbox").checked = false;
 };
 
 //CERTIFICATES

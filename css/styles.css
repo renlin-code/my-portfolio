@@ -37,16 +37,44 @@ header .header-nav {
     list-style: none;
 }
 header .header-nav .header-nav--menu-button {
-    width: 24px;
-    height: 24px;
-    display: inline-block;
-    background-color: unset;
-    background-image: url("../assets/icons/menu.svg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    width: 28px;
+    height: 20px;
+    position: relative;
+    background-color: var(--black-color);
     border: none;
     cursor: pointer;
+}
+header .header-nav .header-nav--menu-button .line-menu-button {
+    width: 28px;
+    height: 2px;
+    border-radius: 1px;
+    transition: all 0.5s ease;
+    position: absolute;
+    display: block;
+    background-color: var(--white-color);
+}
+header .header-nav .header-nav--menu-button .line-menu-button1 {
+    top: 1px;
+}
+header .header-nav .header-nav--menu-button .line-menu-button2 {
+    top: calc(50% - 0.5px);
+}
+header .header-nav .header-nav--menu-button .line-menu-button3 {
+    top: calc(100% - 1px);
+}
+#btn-menu-checkbox {
+    display: none;
+}
+#btn-menu-checkbox:checked ~ .header-nav--menu-button .line-menu-button1 {
+    transform: rotate(140deg);
+    top: 10px;
+}
+#btn-menu-checkbox:checked ~ .header-nav--menu-button .line-menu-button2 {
+    opacity: 0;
+}
+#btn-menu-checkbox:checked ~ .header-nav--menu-button .line-menu-button3 {
+    transform: rotate(-140deg);
+    top: 10px;
 }
 .logotipe {
     width: 150px;
@@ -395,7 +423,7 @@ main {
 }
 .section-contacts .contacts-container .contacts-container--left {
     list-style: none;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
 }
@@ -409,7 +437,7 @@ main {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 .section-contacts .contacts-container .contacts-container--right .contacts-container--right--telephone-icon {
     width: 22px;
