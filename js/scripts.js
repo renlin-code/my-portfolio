@@ -9,7 +9,7 @@ menuButton.addEventListener("click", () => {
 function menuItemClick(){
     navMenu.classList.remove("nav-menu_visible");
     body.classList.remove("body_fixed");
-    document.getElementById("btn-menu-checkbox").checked = false;
+    document.getElementById("btn-menu-checkbox").checked = false
 };
 
 //CERTIFICATES
