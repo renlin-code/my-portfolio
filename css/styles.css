@@ -309,7 +309,7 @@ main {
 }
 .section-certificates .black-section-article .certificates-slide {
     width: 340px;
-    margin: 0 auto 20px;   
+    margin: 0 20px auto 20px;   
     height: 180px;
 }
 .certificates-slide .certificate {
@@ -409,7 +409,7 @@ main {
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
 }
 .section-my-works .section-article .article-content .first-work {
-    background-color: rgb(255, 152, 34);
+    background-color: #f7931a;
 }
 .section-my-works .section-article .article-content .second-work {
     background-color: rgb(255, 255, 255);

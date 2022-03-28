@@ -9,7 +9,6 @@ nav .nav-menu {
     flex-direction: row;
     justify-content: space-between;
     position: static;
-    background-color: unset;
     box-shadow: none;
 }
 nav .nav-menu li {
@@ -57,6 +56,9 @@ header .header-nav .header-nav--menu-button {
 }
 .section-article {
     flex-direction: row;
+}
+.section-certificates .black-section-article .certificates-slide {
+    margin-left: 20px;   
 }
 .section-my-works .section-article .article-content--left {
     order: -1;
