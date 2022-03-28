@@ -9,7 +9,6 @@ nav .nav-menu {
     flex-direction: row;
     justify-content: space-between;
     position: static;
-    background-color: unset;
     box-shadow: none;
 }
 nav .nav-menu li {
