@@ -36,62 +36,62 @@ class Certificate {
 
 const id0 = new Certificate ({
     name: "Curso de Frontend",
-    description: "Curso de Frontend",
+    description: "Теоритический курс по Frontend-разработке",
     viewLocation: "./assets/images/certificate-frontend.png"
 })
 const id1 = new Certificate ({
     name: "Curso Práctico de Frontend",
-    description: "Curso Práctico de Frontend",
+    description: "Практический курс по Frontend-разработке",
     viewLocation: "./assets/images/certificate-frontend-practic.png"
 })
 const id2 = new Certificate ({
     name: "Curso de HTML y CSS",
-    description: "Curso de HTML y CSS",
+    description: "Полный теоритический курс по HTML и CSS",
     viewLocation: "./assets/images/certificate-html-and-css.png"
 })
 const id3 = new Certificate ({
     name: "Curso Práctico de HTML y CSS",
-    description: "Curso Práctico de HTML y CSS",
+    description: "Полный практический курс по HTML и CSS",
     viewLocation: "./assets/images/certificate-html-and-css-practic.png"
 })
 const id4 = new Certificate ({
     name: "Curso de Responsive Design",
-    description: "Curso de Responsive Design",
+    description: "Курс по адаптивной верстке Mobile First",
     viewLocation: "./assets/images/certificate-responsive-mobile-first.png"
 })
 const id5 = new Certificate ({
     name: "Curso de la Terminal",
-    description: "Curso de la Terminal",
+    description: "Курс по терминалу",
     viewLocation: "./assets/images/certificate-terminal.png"
 })
 const id6 = new Certificate ({
     name: "Curso de Git y GitHub",
-    description: "Curso de Git y GitHub",
+    description: "Курс по Git и GitHub",
     viewLocation: "./assets/images/certificate-git-github.png"
 })
 const id7 = new Certificate ({
     name: "Curso Básico de JavaScript",
-    description: "Curso Básico de JavaScript",
+    description: "Базовый теоритический курс по JavaScript",
     viewLocation: "./assets/images/certificate-basic-js.png"
 })
 const id8 = new Certificate ({
     name: "Curso Básico Práctico de JavaScript",
-    description: "Curso Básico Prácticode JavaScript",
+    description: "Базовый практический курс по JavaScript",
     viewLocation: "./assets/images/certificate-basic-js-practic.png"
 })
 const id9 = new Certificate ({
     name: "Curso de Closures y Scope",
-    description: "Curso de Closures y Scope",
+    description: " Курс по Closures y Scope",
     viewLocation: "./assets/images/certificate-scope.png"
 })
 const id10 = new Certificate ({
     name: "Curso de Ingeniería de Softwares",
-    description: "Curso de Ingeniería de Softwares",
+    description: "Курс по Software Engineering",
     viewLocation: "./assets/images/certificate-software-engineering.png" 
 })
 const id11 = new Certificate ({
     name: "Curso Básico de JS Orientado a Objetos",
-    description: "Curso Básico de JS Orientado a Objetos",
+    description: "Базовый теоритический курс по объектно-ориентированному программированию с JavaScript",
     viewLocation: "./assets/images/certificate-basic-js-OOP.png"
 })
 

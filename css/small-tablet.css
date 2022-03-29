@@ -7,16 +7,16 @@
 }
 .main-section--titles-container h1 {
     margin-top: 18px;
-    font-size:8rem;
-    line-height: 8.4rem;
+    font-size:7.4rem;
+    line-height: 8rem;
 }
 .main-section--background-img {
     width: 450px;
     height: 435px;
     position: absolute;
     bottom: 0;
-    left: 90%;
-    transform: translate(-90%);
+    left: 100%;
+    transform: translate(-100%);
 }
 
 .section-contacts .contacts-container .contacts-container--left {
