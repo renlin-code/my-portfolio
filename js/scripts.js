@@ -1,4 +1,4 @@
-//NAVIGATOR MENU
+    //NAVIGATOR MENU
 const menuButton = document.querySelector(".header-nav--menu-button");
 const navMenu = document.querySelector(".nav-menu");
 const body = document.querySelector("body");
@@ -93,6 +93,11 @@ const id11 = new Certificate ({
     name: "Curso Básico de JS Orientado a Objetos",
     description: "Базовый теоритический курс по объектно-ориентированному программированию с JavaScript",
     viewLocation: "./assets/images/certificate-basic-js-OOP.png"
+})
+const id12 = new Certificate ({
+    name: "Curso Intermedio de JS Orientado a Objetos",
+    description: "Средний теоритический курс по объектно-ориентированному программированию с JavaScript",
+    viewLocation: "./assets/images/certificate-middle-js-OOP.png"
 })
 
 function popupClose() {
