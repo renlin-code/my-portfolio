@@ -99,6 +99,11 @@ const id12 = new Certificate ({
     description: "Средний теоритический курс по объектно-ориентированному программированию с JavaScript",
     viewLocation: "./assets/images/certificate-middle-js-OOP.png"
 })
+const id13 = new Certificate ({
+    name: "Curso de Manipulación de Arrays",
+    description: "Курс по управлению Arrays",
+    viewLocation: "./assets/images/certificate-arrays.png"
+})
 
 function popupClose() {
     document.getElementById("popup-window").style.display = "none";

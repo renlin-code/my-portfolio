@@ -30,8 +30,6 @@ header {
     width: 100%;
     position: static;
     background-color: var(--black-color);
-    z-index: 2;
-    transition: background-color 0.5s;
 }
 header .header-nav {
     width: 95%;
@@ -375,6 +373,9 @@ main {
 }
 .certificates-slide .certificate13 {
     background-image: url("../assets/images/certificate-middle-js-OOP-mini.png");
+}
+.certificates-slide .certificate14 {
+    background-image: url("../assets/images/certificate-arrays-mini.png");
 }
 .section-certificates .popup-certificate {
     width: 100%;
