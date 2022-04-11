@@ -104,7 +104,11 @@ const id13 = new Certificate ({
     description: "Курс по управлению Arrays",
     viewLocation: "./assets/images/certificate-arrays.png"
 })
-
+const id14 = new Certificate ({
+    name: "Curso de Asincronismo en JavaScript",
+    description: "Курс по асинхронности в JavaScript",
+    viewLocation: "./assets/images/certificate-async-js.png"
+})
 function popupClose() {
     document.getElementById("popup-window").style.display = "none";
 }

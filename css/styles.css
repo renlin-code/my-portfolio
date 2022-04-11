@@ -377,6 +377,9 @@ main {
 .certificates-slide .certificate14 {
     background-image: url("../assets/images/certificate-arrays-mini.png");
 }
+.certificates-slide .certificate15 {
+    background-image: url("../assets/images/certificate-async-js-mini.png");
+}
 .section-certificates .popup-certificate {
     width: 100%;
     height: 100%;
