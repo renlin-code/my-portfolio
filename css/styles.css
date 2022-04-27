@@ -330,10 +330,7 @@ main {
     background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.6);
     box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.6);
-}
-.certificates-slide .certificate:hover {
-    background-blend-mode: soft-light;
-    cursor: url("../assets/icons/loupe.cur"), default;
+    cursor: pointer;
 }
 .certificates-slide .certificate1 {
     background-image: url("../assets/images/certificate-frontend-mini.png");
@@ -380,6 +377,16 @@ main {
 .certificates-slide .certificate15 {
     background-image: url("../assets/images/certificate-async-js-mini.png");
 }
+.certificates-slide .certificate16 {
+    background-image: url("../assets/images/certificate-flexbox-css-grid-mini.png");
+}
+.certificates-slide .certificate17 {
+    background-image: url("../assets/images/certificate-transform-transition-mini.png");
+}
+.certificates-slide .certificate18 {
+    background-image: url("../assets/images/certificate-ecmascript-mini.png");
+}
+
 .section-certificates .popup-certificate {
     width: 100%;
     height: 100%;
@@ -547,13 +554,4 @@ footer .github, footer .github a {
     line-height: 1.4rem;
     padding: 20px 0;
     color: var(--white-color);
-}
-header .header-nav 
- .header-nav--menu-button:hover, .nav-menu li:hover, 
-.telephone:hover,
-.section-certificates .popup-certificate span:hover,
-.section-my-works .section-article .article-content a:hover,
-.section-contacts .contacts-container a:hover, footer .footer-menu li:hover, 
-footer .github a:hover {
-    opacity: 0.6;
 }

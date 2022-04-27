@@ -109,6 +109,22 @@ const id14 = new Certificate ({
     description: "Курс по асинхронности в JavaScript",
     viewLocation: "./assets/images/certificate-async-js.png"
 })
+const id15 = new Certificate ({
+    name: "Curso de Diseño Web con Flexbox y CSS Grid",
+    description: "Курс по веб-дизайн c Flexbox и CSS Grid",
+    viewLocation: "./assets/images/certificate-flexbox-css-grid.png"
+})
+const id16 = new Certificate ({
+    name: "Curso de Transformaciones y Transiciones",
+    description: "Курс по transform и transition",
+    viewLocation: "./assets/images/certificate-transform-transition.png"
+})
+const id17 = new Certificate ({
+    name: "Curso de Ecmascript",
+    description: "Курс по Ecmascript",
+    viewLocation: "./assets/images/certificate-ecmascript.png"
+})
+
 function popupClose() {
     document.getElementById("popup-window").style.display = "none";
 }

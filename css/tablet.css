@@ -64,3 +64,16 @@ header .header-nav .header-nav--menu-button {
     order: 0;
     margin-left: 20px;
 }
+.certificates-slide .certificate:hover {
+    background-blend-mode: soft-light;
+    cursor: url("../assets/icons/loupe.cur"), default;
+}
+header .header-nav 
+ .header-nav--menu-button:hover, .nav-menu li:hover, 
+.telephone:hover,
+.section-certificates .popup-certificate span:hover,
+.section-my-works .section-article .article-content a:hover,
+.section-contacts .contacts-container a:hover, footer .footer-menu li:hover, 
+footer .github a:hover {
+    opacity: 0.6;
+}
