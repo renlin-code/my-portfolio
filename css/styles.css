@@ -28,7 +28,6 @@ body::-webkit-scrollbar-thumb {
 }
 header {
     width: 100%;
-    position: static;
     background-color: var(--black-color);
 }
 header .header-nav {
@@ -120,6 +119,7 @@ nav .nav-menu li a {
     color: var(--white-color);
 }
 .telephone {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,7 +128,6 @@ nav .nav-menu li a {
 .telephone-icon {
     width: 20px;
     height: 20px;
-    display: inline-block;
     background-image: url("../assets/icons/telephone.svg");
     background-position: center;
     background-size: contain;
@@ -554,4 +553,8 @@ footer .github, footer .github a {
     line-height: 1.4rem;
     padding: 20px 0;
     color: var(--white-color);
+}
+footer .github a {
+    text-decoration: none;
+    color: var(--main-color);    
 }

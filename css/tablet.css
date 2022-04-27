@@ -2,6 +2,7 @@ nav .nav-menu {
     width: 100%;
     max-width: 400px;
     padding: 0;
+    margin-top: 20px;
     flex-direction: row;
     justify-content: space-between;
     position: static;
