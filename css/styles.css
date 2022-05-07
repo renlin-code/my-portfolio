@@ -437,8 +437,8 @@ main {
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
 }
 .section-my-works .section-article .article-content a span {
-    width: 129px;
-    height: 24px;    
+    width: 140px;
+    height: 34px;    
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -455,12 +455,19 @@ main {
 .section-my-works .section-article .article-content .second-work span {
     background-image: url("../assets/logos/renlin-code.svg");
 }
-/* .section-my-works .section-article .article-content .third-work {
+.section-my-works .section-article .article-content .third-work {
+    background-color: #f5f5f5;
+} 
+.section-my-works .section-article .article-content .third-work span {
+    background-image: url("../assets/logos/logo-spyfall.svg");
+}
+/* .section-my-works .section-article .article-content .fourth-work {
     background-color: var(--secondary-color);
 } 
 .section-my-works .section-article .article-content .second-work span {
     background-image: url("../assets/images/logo-batabit.svg");
-}*/
+} */
+
 .section-contacts .contacts-container {
     width: 100%;
     height: auto;
