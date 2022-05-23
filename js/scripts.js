@@ -6,7 +6,7 @@ menuButton.addEventListener("click", () => {
     navMenu.classList.toggle("nav-menu_visible");
     body.classList.toggle("body_fixed");
 });
-function menuItemClick(){
+const menuItemClick = () => {
     navMenu.classList.remove("nav-menu_visible");
     body.classList.remove("body_fixed");
     document.getElementById("btn-menu-checkbox").checked = false
@@ -125,7 +125,9 @@ const id17 = new Certificate ({
     viewLocation: "./assets/images/certificate-ecmascript.png"
 })
 
-function popupClose() {
+
+
+const popupClose = () => {
     document.getElementById("popup-window").style.display = "none";
 }
 
