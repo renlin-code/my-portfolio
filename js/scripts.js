@@ -35,37 +35,60 @@ const popupView = (certificateIndex) => {
     const popupWindow = document.getElementById("popup-window");
     const image = document.getElementById("popup-img");
     const description = document.getElementById("certificate-description");
+    const closeButton = document.querySelector(".close");
     const buttonPrev = document.getElementById("buttonPrev");
     const buttonNext = document.getElementById("buttonNext");
 
     popupWindow.style.display = "flex";
-    image.src = certificates[certificateIndex].viewUrl;
-    description.innerHTML = certificates[certificateIndex].description;
+    setTimeout(() => {
+        popupWindow.style.transform = "scale(1)";
+        image.src = certificates[certificateIndex].viewUrl;
+        description.innerHTML = certificates[certificateIndex].description;
+    
+        buttonPrev.addEventListener("click", () => {
+            buttonPrev.classList.add("__rotate-left");
+            setTimeout(()=>{
+                buttonPrev.classList.remove("__rotate-left");
+            },400);
 
-    buttonPrev.addEventListener("click", () => {
-        image.src = "";
-        description.innerHTML = "";        
+            image.src = "";
+            description.innerHTML = "";        
 
-        if (certificateIndex > 0) {
-            certificateIndex--;
-            image.src = certificates[certificateIndex].viewUrl;
-            description.innerHTML = certificates[certificateIndex].description;
-        } else {
-            popupView(certificateIndex);
-        }
-    })
-    buttonNext.addEventListener("click", () => {
-        image.src = "";
-        description.innerHTML = "";        
+            if (certificateIndex > 0) {
+                certificateIndex--;
+                image.src = certificates[certificateIndex].viewUrl;
+                description.innerHTML = certificates[certificateIndex].description;
+            } else {
+                popupView(certificateIndex);
+            }
+        })
+        buttonNext.addEventListener("click", () => {
+            buttonNext.classList.add("__rotate-right");
+            setTimeout(()=>{
+                buttonNext.classList.remove("__rotate-right");
+            },400);
 
-        if (certificateIndex >= 0 && certificateIndex < certificates.length - 1) {
-            certificateIndex++;
-            image.src = certificates[certificateIndex].viewUrl;
-            description.innerHTML = certificates[certificateIndex].description;
-        } else {
-            popupView(certificateIndex);
-        }
-    })
+            image.src = "";
+            description.innerHTML = "";        
+    
+            if (certificateIndex >= 0 && certificateIndex < certificates.length - 1) {
+                certificateIndex++;
+                image.src = certificates[certificateIndex].viewUrl;
+                description.innerHTML = certificates[certificateIndex].description;
+            } else {
+                popupView(certificateIndex);
+            }
+        })
+        
+        closeButton.addEventListener("click",() => {
+            popupWindow.style.transform = "scale(0)";
+            setTimeout(() => {
+                image.src = "";
+                description.innerHTML = "";            
+                popupWindow.style.display = "none";
+            }, 400)
+        })       
+    },0)
 }
 
 const id0 = new Certificate ({
@@ -212,12 +235,6 @@ const id17 = new Certificate ({
     previewUrl: "./assets/images/certificate-ecmascript-mini.png"
 })
 certificates.push(id17);
-
-
-
-const popupClose = () => {
-    document.getElementById("popup-window").style.display = "none";
-}
 
 const renderCertificates = () => {
     const certificatesSlider = document.querySelector(".owl-carousel");    

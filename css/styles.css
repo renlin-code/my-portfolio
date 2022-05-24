@@ -333,9 +333,9 @@ main {
 }
 
 .section-certificates .popup-certificate {
+    display: none;
     width: 100%;
     height: 100%;
-    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -344,6 +344,8 @@ main {
     left: 0;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.94);
+    transform: scale(0);
+    transition: all 400ms;
 }
 .section-certificates .popup-certificate span {
     width: 16px;
@@ -392,6 +394,8 @@ main {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
 }
 .section-certificates .popup-certificate .popup--button-container .button-prev {
     background-image: url("../assets/icons/prev-icon.svg");
@@ -399,6 +403,36 @@ main {
 .section-certificates .popup-certificate .popup--button-container .button-next {
     background-image: url("../assets/icons/next-icon.svg");
 }
+.__rotate-left {
+    animation-name: rotate-left;
+}
+.__rotate-right {
+    animation-name: rotate-right;
+}
+
+@keyframes rotate-left {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-60deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes rotate-right {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(60deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
 
 .section-my-works .section-article .article-content a {
     width: 100%;
