@@ -31,17 +31,21 @@ class Certificate {
     }
 }
 
-const popupView = (certificateIndex) => {
+const popupView = (cert) => {
+    let certificateIndex = cert;
+    console.log(certificateIndex);
+    const counter = document.getElementById("counter");
+    const closeButton = document.getElementById("closeButton");
     const popupWindow = document.getElementById("popup-window");
     const image = document.getElementById("popup-img");
     const description = document.getElementById("certificate-description");
-    const closeButton = document.querySelector(".close");
     const buttonPrev = document.getElementById("buttonPrev");
     const buttonNext = document.getElementById("buttonNext");
 
     popupWindow.style.display = "flex";
     setTimeout(() => {
         popupWindow.style.transform = "scale(1)";
+        counter.innerHTML = `${certificateIndex + 1} / ${certificates.length}`;
         image.src = certificates[certificateIndex].viewUrl;
         description.innerHTML = certificates[certificateIndex].description;
     
@@ -51,15 +55,16 @@ const popupView = (certificateIndex) => {
                 buttonPrev.classList.remove("__rotate-left");
             },400);
 
-            image.src = "";
-            description.innerHTML = "";        
-
             if (certificateIndex > 0) {
+                console.log(certificateIndex);
+                counter.innerHTML = "";
+                image.src = "";
+                description.innerHTML = "";        
+    
+                counter.innerHTML = `${certificateIndex - 1} / ${certificates.length}`;
+                image.src = certificates[certificateIndex - 1].viewUrl;
+                description.innerHTML = certificates[certificateIndex - 1].description;
                 certificateIndex--;
-                image.src = certificates[certificateIndex].viewUrl;
-                description.innerHTML = certificates[certificateIndex].description;
-            } else {
-                popupView(certificateIndex);
             }
         })
         buttonNext.addEventListener("click", () => {
@@ -67,20 +72,22 @@ const popupView = (certificateIndex) => {
             setTimeout(()=>{
                 buttonNext.classList.remove("__rotate-right");
             },400);
-
-            image.src = "";
-            description.innerHTML = "";        
     
             if (certificateIndex >= 0 && certificateIndex < certificates.length - 1) {
+                console.log(certificateIndex);
+                counter.innerHTML = "";
+                image.src = "";
+                description.innerHTML = "";        
+                
+                counter.innerHTML = `${certificateIndex + 1} / ${certificates.length}`;
+                image.src = certificates[certificateIndex + 1].viewUrl;
+                description.innerHTML = certificates[certificateIndex + 1].description;
                 certificateIndex++;
-                image.src = certificates[certificateIndex].viewUrl;
-                description.innerHTML = certificates[certificateIndex].description;
-            } else {
-                popupView(certificateIndex);
             }
         })
         
         closeButton.addEventListener("click",() => {
+            certificateIndex = undefined;
             popupWindow.style.transform = "scale(0)";
             setTimeout(() => {
                 image.src = "";

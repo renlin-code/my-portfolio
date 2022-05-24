@@ -348,7 +348,14 @@ main {
     transform: scale(0);
     transition: all 400ms;
 }
-.section-certificates .popup-certificate span {
+.section-certificates .popup-certificate .counter {
+    color: var(--white-color);
+    font-size: 1.8rem;
+    font-weight: bold;
+    position: fixed;
+    top: 8vh;
+}
+.section-certificates .popup-certificate .close {
     width: 16px;
     height: 16px;
     position: absolute;
