@@ -57,6 +57,11 @@ header .header-nav .header-nav--menu-button {
 .section-certificates .black-section-article .certificates-slide {
     margin-left: 20px;   
 }
+.section-certificates .popup-certificate img {
+    width: 95%;
+    max-width: 600px;
+}
+
 .section-my-works .section-article .article-content--left {
     order: -1;
     margin-right: 20px;

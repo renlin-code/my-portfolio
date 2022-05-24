@@ -31,15 +31,41 @@ class Certificate {
     }
 }
 
-const popupView = (certificate) => {
+const popupView = (certificateIndex) => {
     const popupWindow = document.getElementById("popup-window");
     const image = document.getElementById("popup-img");
     const description = document.getElementById("certificate-description");
+    const buttonPrev = document.getElementById("buttonPrev");
+    const buttonNext = document.getElementById("buttonNext");
 
     popupWindow.style.display = "flex";
-    image.src = certificate.viewUrl;
-    description.innerHTML = certificate.description;
+    image.src = certificates[certificateIndex].viewUrl;
+    description.innerHTML = certificates[certificateIndex].description;
 
+    buttonPrev.addEventListener("click", () => {
+        image.src = "";
+        description.innerHTML = "";        
+
+        if (certificateIndex > 0) {
+            certificateIndex--;
+            image.src = certificates[certificateIndex].viewUrl;
+            description.innerHTML = certificates[certificateIndex].description;
+        } else {
+            popupView(certificateIndex);
+        }
+    })
+    buttonNext.addEventListener("click", () => {
+        image.src = "";
+        description.innerHTML = "";        
+
+        if (certificateIndex >= 0 && certificateIndex < certificates.length - 1) {
+            certificateIndex++;
+            image.src = certificates[certificateIndex].viewUrl;
+            description.innerHTML = certificates[certificateIndex].description;
+        } else {
+            popupView(certificateIndex);
+        }
+    })
 }
 
 const id0 = new Certificate ({
@@ -133,7 +159,7 @@ certificates.push(id10);
 
 const id11 = new Certificate ({
     name: "Curso Básico de JS Orientado a Objetos",
-    description: "Базовый теоритический курс по объектно-ориентированному программированию с JavaScript",
+    description: "Базовый теоритический курс по ООП с JavaScript",
     viewUrl: "./assets/images/certificate-basic-js-OOP.png",
     previewUrl: "./assets/images/certificate-basic-js-OOP-mini.png"
 })
@@ -141,7 +167,7 @@ certificates.push(id11);
 
 const id12 = new Certificate ({
     name: "Curso Intermedio de JS Orientado a Objetos",
-    description: "Средний теоритический курс по объектно-ориентированному программированию с JavaScript",
+    description: "Средний теоритический курс по ООП с JavaScript",
     viewUrl: "./assets/images/certificate-middle-js-OOP.png",
     previewUrl: "./assets/images/certificate-middle-js-OOP-mini.png"
 })
@@ -198,10 +224,11 @@ const renderCertificates = () => {
     for (let i = 0; i < certificates.length; i++) {
         const certificateContainer = document.createElement("div");
         const certificate = document.createElement("span");
+
         certificate.classList.add("item", "certificate");
         certificate.style.backgroundImage = `url(${certificates[i].previewUrl})`;
         certificate.addEventListener("click", () => {
-            popupView(certificates[i]);
+            popupView(i);
         })
 
         certificateContainer.appendChild(certificate);

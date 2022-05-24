@@ -19,6 +19,22 @@
     transform: translate(-100%);
 }
 
+.section-certificates .popup-certificate img {
+    width: 75%;
+    max-width: 550px;
+}
+.section-certificates .popup-certificate p {
+    bottom: 4vh;
+    max-width: 860px;
+}
+.section-certificates .popup-certificate .popup--button-container {
+    bottom: auto;
+    gap: 80vw;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
 .section-contacts .contacts-container .contacts-container--left {
     flex-direction: row;
     justify-content: left;
