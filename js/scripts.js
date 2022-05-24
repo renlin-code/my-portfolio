@@ -243,6 +243,31 @@ const id17 = new Certificate ({
 })
 certificates.push(id17);
 
+const id18 = new Certificate ({
+    name: "Curso de consumo de API REST con JavaScript",
+    description: "Курс по API REST с JavaScript",
+    viewUrl: "./assets/images/certificate-api-rest.png",
+    previewUrl: "./assets/images/certificate-api-rest-mini.png",
+})
+certificates.push(id18);
+
+const id19 = new Certificate ({
+    name: "Curso de Fundamentos de TypeScript",
+    description: "Курс основы TypeScript",
+    viewUrl: "./assets/images/certificate-typescript.png",
+    previewUrl: "./assets/images/certificate-typescript-mini.png"
+})
+certificates.push(id19);
+
+const id20 = new Certificate ({
+    name: "Curso de Vue.js: Introducción y fundamentos",
+    description: "Курс основы Vue.js",
+    viewUrl: "./assets/images/certificate-vue.png",
+    previewUrl: "./assets/images/certificate-vue-mini.png"
+})
+certificates.push(id20);
+
+
 const renderCertificates = () => {
     const certificatesSlider = document.querySelector(".owl-carousel");    
     for (let i = 0; i < certificates.length; i++) {
