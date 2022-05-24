@@ -45,7 +45,7 @@ const popupView = (cert) => {
     popupWindow.style.display = "flex";
     setTimeout(() => {
         popupWindow.style.transform = "scale(1)";
-        counter.innerHTML = `${certificateIndex + 1} / ${certificates.length}`;
+        // counter.innerHTML = `${certificateIndex + 1} / ${certificates.length}`;
         image.src = certificates[certificateIndex].viewUrl;
         description.innerHTML = certificates[certificateIndex].description;
     
@@ -57,11 +57,11 @@ const popupView = (cert) => {
 
             if (certificateIndex > 0) {
                 console.log(certificateIndex);
-                counter.innerHTML = "";
+                // counter.innerHTML = "";
                 image.src = "";
                 description.innerHTML = "";        
     
-                counter.innerHTML = `${certificateIndex - 1} / ${certificates.length}`;
+                // counter.innerHTML = `${certificateIndex - 1} / ${certificates.length}`;
                 image.src = certificates[certificateIndex - 1].viewUrl;
                 description.innerHTML = certificates[certificateIndex - 1].description;
                 certificateIndex--;
@@ -75,11 +75,11 @@ const popupView = (cert) => {
     
             if (certificateIndex >= 0 && certificateIndex < certificates.length - 1) {
                 console.log(certificateIndex);
-                counter.innerHTML = "";
+                // counter.innerHTML = "";
                 image.src = "";
                 description.innerHTML = "";        
                 
-                counter.innerHTML = `${certificateIndex + 1} / ${certificates.length}`;
+                // counter.innerHTML = `${certificateIndex + 1} / ${certificates.length}`;
                 image.src = certificates[certificateIndex + 1].viewUrl;
                 description.innerHTML = certificates[certificateIndex + 1].description;
                 certificateIndex++;
