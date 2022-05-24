@@ -331,60 +331,6 @@ main {
     box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.6);
     cursor: pointer;
 }
-.certificates-slide .certificate1 {
-    background-image: url("../assets/images/certificate-frontend-mini.png");
-}
-.certificates-slide .certificate2 {
-    background-image: url("../assets/images/certificate-frontend-practic-mini.png");
-}
-.certificates-slide .certificate3 {
-    background-image: url("../assets/images/certificate-html-and-css-mini.png");
-}
-.certificates-slide .certificate4 {
-    background-image: url("../assets/images/certificate-html-and-css-practic-mini.png");
-}
-.certificates-slide .certificate5 {
-    background-image: url("../assets/images/certificate-responsive-mobile-first-mini.png");
-}
-.certificates-slide .certificate6 {
-    background-image: url("../assets/images/certificate-terminal-mini.png");
-}
-.certificates-slide .certificate7 {
-    background-image: url("../assets/images/certificate-git-github-mini.png");
-}
-.certificates-slide .certificate8 {
-    background-image: url("../assets/images/certificate-basic-js-mini.png");
-}
-.certificates-slide .certificate9 {
-    background-image: url("../assets/images/certificate-basic-js-practic-mini.png");
-}
-.certificates-slide .certificate10 {
-    background-image: url("../assets/images/certificate-scope-mini.png");
-}
-.certificates-slide .certificate11 {
-    background-image: url("../assets/images/certificate-software-engineering-mini.png");
-}
-.certificates-slide .certificate12 {
-    background-image: url("../assets/images/certificate-basic-js-OOP-mini.png");
-}
-.certificates-slide .certificate13 {
-    background-image: url("../assets/images/certificate-middle-js-OOP-mini.png");
-}
-.certificates-slide .certificate14 {
-    background-image: url("../assets/images/certificate-arrays-mini.png");
-}
-.certificates-slide .certificate15 {
-    background-image: url("../assets/images/certificate-async-js-mini.png");
-}
-.certificates-slide .certificate16 {
-    background-image: url("../assets/images/certificate-flexbox-css-grid-mini.png");
-}
-.certificates-slide .certificate17 {
-    background-image: url("../assets/images/certificate-transform-transition-mini.png");
-}
-.certificates-slide .certificate18 {
-    background-image: url("../assets/images/certificate-ecmascript-mini.png");
-}
 
 .section-certificates .popup-certificate {
     width: 100%;
@@ -403,8 +349,8 @@ main {
     width: 16px;
     height: 16px;
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 20px;
+    top: 20px;
     opacity: 0.8;
     background-image: url("../assets/icons/close.svg");
     background-position: center;
