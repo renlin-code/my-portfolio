@@ -283,6 +283,7 @@ main {
     line-height: 2.6rem;
     margin-bottom: 20px;
     font-weight: bold;
+    text-align: start;
 }
 .white-section-article p, ul {
     color: var(--black-color);
