@@ -77,7 +77,7 @@ header .header-nav .header-nav--menu-button {
 header .header-nav 
  .header-nav--menu-button:hover, .nav-menu li:hover, 
 .telephone:hover,
-.section-certificates .popup-certificate span:hover,
+.section-certificates .popup-certificate .close:hover, button:hover,
 .section-my-works .section-article .article-content a:hover,
 .section-contacts .contacts-container a:hover, footer .footer-menu li:hover, 
 footer .github a:hover {
