@@ -54,9 +54,35 @@ header .header-nav .header-nav--menu-button {
 .section-article {
     flex-direction: row;
 }
-.section-certificates .black-section-article .certificates-slide {
+.section-certificates .black-section-article .carousel {
     margin-left: 20px;   
 }
+.flickity-button {
+    background: var(--very-black-color);
+  }  
+  .flickity-prev-next-button {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .flickity-button-icon {
+    fill: var(--white-color);
+  }
+  
+  .flickity-prev-next-button:hover {
+    background: var(--secondary-color);
+  }
+  .flickity-prev-next-button.previous {
+    top: 160px;
+    margin-left: 100px;
+  }
+  .flickity-prev-next-button.next {
+    top: 160px;
+    margin-right: 100px;
+  }
+  
+  
 .section-certificates .popup-certificate img {
     width: 95%;
     max-width: 600px;
@@ -70,16 +96,11 @@ header .header-nav .header-nav--menu-button {
     order: 0;
     margin-left: 20px;
 }
-.certificates-slide .certificate:hover {
+.carousel .carousel-cell:hover {
     background-blend-mode: soft-light;
     cursor: url("../assets/icons/loupe.cur"), default;
 }
-header .header-nav 
- .header-nav--menu-button:hover, .nav-menu li:hover, 
-.telephone:hover,
-.section-certificates .popup-certificate .close:hover, button:hover,
-.section-my-works .section-article .article-content a:hover,
-.section-contacts .contacts-container a:hover, footer .footer-menu li:hover, 
-footer .github a:hover {
+a:hover,
+button:hover {
     opacity: 0.6;
 }

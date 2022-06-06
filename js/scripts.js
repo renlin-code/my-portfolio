@@ -274,12 +274,12 @@ certificates.push(id20);
 
 
 const renderCertificates = () => {
-    const certificatesSlider = document.querySelector(".owl-carousel");    
+    const certificatesSlider = document.querySelector(".carousel");    
     for (let i = 0; i < certificates.length; i++) {
         const certificateContainer = document.createElement("div");
         const certificate = document.createElement("span");
 
-        certificate.classList.add("item", "certificate");
+        certificate.classList.add("carousel-cell");
         certificate.style.backgroundImage = `url(${certificates[i].previewUrl})`;
         certificate.addEventListener("click", () => {
             popupView(i);
@@ -290,22 +290,3 @@ const renderCertificates = () => {
     }
 }
 renderCertificates();
-
-
-//SLIDER CONTROLS
-$('.owl-carousel').owlCarousel({
-    loop:false,
-    margin:10,
-    nav:false,
-    responsive:{
-        0:{
-            items:2
-        },
-        600:{
-            items:2
-        },
-        1000:{
-            items:2
-        }
-    }
-})
