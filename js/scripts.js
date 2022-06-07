@@ -35,7 +35,6 @@ const popupView = (cert) => {
     let certificateIndex = cert;
     let counter = certificateIndex + 1;
 
-    console.log(certificateIndex);
     const counterEl = document.getElementById("counter");
     const closeButton = document.getElementById("closeButton");
     const popupWindow = document.getElementById("popup-window");
@@ -58,7 +57,6 @@ const popupView = (cert) => {
             },400);
 
             if (certificateIndex > 0) {
-                console.log(certificateIndex);
                 counterEl.innerHTML = "";
                 image.src = "";
                 description.innerHTML = "";
@@ -78,7 +76,6 @@ const popupView = (cert) => {
             },400);
     
             if (certificateIndex >= 0 && certificateIndex < certificates.length - 1) {
-                console.log(certificateIndex);
                 counterEl.innerHTML = "";
                 image.src = "";
                 description.innerHTML = ""; 

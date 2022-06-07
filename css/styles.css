@@ -333,9 +333,30 @@ main {
     box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.6);
     cursor: pointer;
 }
-.flickity-prev-next-button {
+.flickity-button {
+    background: var(--very-black-color);
+  }  
+  .flickity-prev-next-button {
     display: none;
-}
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .flickity-button-icon {
+    fill: var(--white-color);
+  }
+  
+  .flickity-prev-next-button:hover {
+    background: var(--secondary-color);
+  }
+  .flickity-prev-next-button.previous {
+    top: 160px;
+    margin-left: 100px;
+  }
+  .flickity-prev-next-button.next {
+    top: 160px;
+    margin-right: 100px;
+  }
 
 .section-certificates .popup-certificate {
     display: none;
@@ -397,17 +418,15 @@ main {
     bottom: 4vh;
 }
 .section-certificates .popup-certificate .popup--button-container button {
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     border: none;
     cursor: pointer;
-    background-color: var(--black-color);
+    background-color: var(--very-black-color);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    animation-duration: 500ms;
-    animation-iteration-count: 1;
 }
 .section-certificates .popup-certificate .popup--button-container .button-prev {
     background-image: url("../assets/icons/prev-icon.svg");
@@ -415,36 +434,6 @@ main {
 .section-certificates .popup-certificate .popup--button-container .button-next {
     background-image: url("../assets/icons/next-icon.svg");
 }
-.__rotate-left {
-    animation-name: rotate-left;
-}
-.__rotate-right {
-    animation-name: rotate-right;
-}
-
-@keyframes rotate-left {
-    0% {
-        transform: rotate(0deg);
-    }
-    50% {
-        transform: rotate(-60deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
-}
-@keyframes rotate-right {
-    0% {
-        transform: rotate(0deg);
-    }
-    50% {
-        transform: rotate(60deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
-}
-
 
 .section-my-works .section-article .article-content a {
     width: 100%;
